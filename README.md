@@ -1,20 +1,7 @@
 # Gluetun Reloader
 
-A simple Dockerized Python service that uses the [Gluetun HTTP control server](https://github.com/qdm12/gluetun/wiki/HTTP-control-server) to stop the WireGuard or OpenVPN tunnel every 2 hours (or at a custom interval), using authenticated API requests.
+A simple Dockerized Python service that uses the [Gluetun HTTP control server](https://github.com/qdm12/gluetun/wiki/HTTP-control-server) to stop/restart the WireGuard or OpenVPN tunnel at a custom interval, using authenticated API requests.
 
----
-
-## Project Structure
-
-```
-gluetun-reloader/
-├── docker-compose.yml         # Gluetun and Stopper services
-├── Dockerfile                 # Python script container
-├── gluetun_reload.py            # Python script to stop Gluetun
-├── requirements.txt           # Python packages
-├── .env                       # Environment configuration
-└── README.md
-```
 
 ---
 
